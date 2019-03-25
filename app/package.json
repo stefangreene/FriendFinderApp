@@ -1,0 +1,32 @@
+{
+  "name": "friendfinder",
+  "version": "1.0.0",
+  "description": "homework assignment",
+  "main": "server.js",
+  "scripts": {
+    "test": "test",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stefangreene/FriendFinderApp.git"
+  },
+  "keywords": [
+    "friend",
+    "finder",
+    "homework"
+  ],
+  "author": "stefan greene",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stefangreene/FriendFinderApp/issues"
+  },
+  "homepage": "https://github.com/stefangreene/FriendFinderApp#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "fs": "0.0.1-security",
+    "js": "^0.1.0",
+    "path": "^0.12.7"
+  }
+}

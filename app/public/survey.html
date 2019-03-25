@@ -8,6 +8,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   </head>
   <body>   
     <!-- Optional JavaScript -->
@@ -15,170 +16,259 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <body>
+    
+<div class='container'>
+    <div class='card-panel yellow darken-1 col s12 center-align'>
+      <h4><strong>Survey Questions</strong></h4>
+        <div class='card-panel left-align white'>
+            <h5><strong>About You</strong></h5>
+          <br>
+            <input id="name" type="text" class="mustHave" required>
+                <label class='active' for="name">Name (required)</label>
+                <input id="photo" type="text"> <!--class="mustHave" required>-->
+                <label class='active' for="name">Link to Photo Image (required)</label>
+
+<!--................Question 1...................-->
+  <h5><strong>Question 1</strong></h5>
+      <p>I like long walks on the beach.</p>
+        <select data-placeholder="" class="question-default" id="q1">
+    <option value="">Choose an option</option>
+    <option value="1">1 (Strongly Disagree)</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+<!--................Question 2...................-->
+  <h5><strong>Question 2</strong></h5>
+      <p>I also like long walks in the park.</p>
+          <select data-placeholder="" class="question-default" id="q2">
+    <option value="">Choose an option</option>
+    <option value="1">1 (Strongly Disagree)</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5 (Strongly Agree)</option>
+          </select>
+
+<!--................Question 3...................-->
+  <h5><strong>Question 3</strong></h5>
+      <p>How important are those long walks.</p>
+          <select data-placeholder="" class="question-default" id="q3">
+    <option value="">Choose an option</option>
+    <option value="1">1 (Not Important)</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5 (Very Important)</option>
+          </select>
+
+<!--................Question 4...................-->
+  <h5><strong>Question 4</strong></h5>
+      <p>Comfortable shoes are an important part of a long walk.</p>
+          <select data-placeholder="" class="question-default" id="q4">
+    <option value="">Choose an option</option>
+    <option value="1">1 (Strongly Disagree)</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5 (Strongly Agree)</option>
+          </select>
+
+<!--................Question 5...................-->
+  <h5><strong>Question 5</strong></h5>
+      <p>If there are no beaches or parks I'm open to walk in other places.</p>
+          <select data-placeholder="" class="question-default" id="q5">
+    <option value="">Choose an option</option>
+    <option value="1">1 (Strongly Disagree)</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5 (Strongly Agree)</option>
+          </select>
+
+<!--................Question 6...................-->
+  <h5><strong>Question 6</strong></h5>
+      <p>I see myself as reserved and quiet walker.</p>
+          <select data-placeholder="" class="question-default" id="q6">
+    <option value="">Choose an Option</option>
+    <option value="1">1 (Strongly Disagree)</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5 (Strongly Agree)</option>
+          </select>
+
+<!--................Question 7...................-->
+  <h5><strong>Question 7</strong></h5>
+      <p>I see myself as sympathetic to walkers without comfortable shoes.</p>
+          <select data-placeholder="" class="question-default" id="q7">
+    <option value="">Choose an option</option>
+    <option value="1">1 (Strongly Disagree)</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5 (Strongly Agree)</option>
+          </select>
+              
+<!--................Question 8...................-->
+  <h5><strong>Question 8</strong></h5>
+      <p>I typically bring snacks with me on my walks.</p>
+          <select data-placeholder="" class="question-default" id="q8">
+    <option value="">Choose an option</option>
+    <option value="1">1 (Strongly Disagree)</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5 (Strongly Agree)</option>
+          </select>
+
+<!--................Question 9...................-->
+  <h5><strong>Question 9</strong></h5>
+      <p>And wine.</p>
+          <select data-placeholder="" class="question-default" id="q9">
+    <option value="">Choose an option</option>
+    <option value="1">1 (Strongly Disagree)</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5 (Strongly Agree)</option>
+          </select>
+
+<!--................Question 10...................-->
+  <h5><strong>Question 10</strong></h5>
+      <p>Making a family is important to me.</p>
+          <select data-placeholder="" class="question-default" id="q10">
+    <option value="">Choose an option</option>
+    <option value="1">1 (Not Important)</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5 (Very Important)</option>
+            </select>
+  <br>
+  <hr>
+<!-- ...........Modal Trigger/Submit Button............. -->
+  <!-- Submit Button -->
+ 
+  
 
 <div class="container">
-    <div class="jumbotron">
-      <h2>Survey Questions</h2>
-      <hr>
-      <h3><strong>About You</strong></h3>
-    <h4>Name (Required)</h4>
-      <input type="text" class="form-control" id="name" required>
-    <h4>Link to Photo Image(required)</h4>
-      <input type="text" class="form-control" id="photo" required>
-      <hr>
+<!-- Trigger the modal with a button -->
+<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#modal1" id="submitButton">Submit Your Survey</button>
 
-<!--Question One-->
-<h3><strong>Question 1:</strong></h3>
-    <h4>Family is an Important part of your daily activities.</h4>
-    <a class="btn btn-outline-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Choose your Answer
-      </a>
-  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-        <a class="dropdown-item" value ="1" href="#">1 (Strongly Disagree)</a>
-        <a class="dropdown-item" value ="2" href="#">2</a>
-        <a class="dropdown-item" value ="3" href="#">3</a>
-        <a class="dropdown-item" value ="4" href="#">4</a>
-        <a class="dropdown-item" value ="5" href="#">5 (Strongly Agree)</a>
-  </div>
-
-<!--Question two-->
-<h3><strong>Question 2:</strong></h3>
-    <h4>The environmnet is Important: How many plastic grocery bags do you accept in a year?</h4>
-    <div class="dropdown show">
-            <a class="btn btn-outline-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Choose your Answer
-            </a>
-    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-            <a class="dropdown-item" href="#">less than 10</a>
-            <a class="dropdown-item" href="#">11 to 40</a>
-            <a class="dropdown-item" href="#">41 to 90</a>
-            <a class="dropdown-item" href="#">91 to 140</a>
-            <a class="dropdown-item" href="#">Too many</a>
+<!-- Modal -->
+<div class="modal fade" id="modal1" role="dialog">
+    <div class="modal-dialog">
+      
+<!-- Modal content-->
+  <div class="modal-content">
+      <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Meet Your New BFF</h4>
     </div>
-
-    <!--Question three-->
-<h3><strong>Question 3:</strong></h3>
-    <h4>Are you an animal lover?</h4>
-    <a class="btn btn-outline-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Choose your Answer
-      </a>
-  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-        <a class="dropdown-item" href="#">1 (Strongly Disagree)</a>
-        <a class="dropdown-item" href="#">2</a>
-        <a class="dropdown-item" href="#">3</a>
-        <a class="dropdown-item" href="#">4</a>
-        <a class="dropdown-item" href="#">5 (Strongly Agree)</a>
-  </div>
-
-<!--Question four-->
-<h3><strong>Question 4:</strong></h3>
-    <h4>If you are an Animal lover: Dogs or Cats?</h4>
-    <a class="btn btn-outline-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Choose your Answer
-      </a>
-  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-        <a class="dropdown-item" href="#">Dogs</a>
-        <a class="dropdown-item" href="#">Cats</a>
-        <a class="dropdown-item" href="#">Neither</a>
-  </div>
-
-<!--Question five-->
-<h3><strong>Question 5:</strong></h3>
-    <h4>Balancing your diet with fruits and vegetables is important to you?</h4>
-    <a class="btn btn-outline-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Choose your Answer
-      </a>
-  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-        <a class="dropdown-item" href="#">1 (Strongly Disagree)</a>
-        <a class="dropdown-item" href="#">2</a>
-        <a class="dropdown-item" href="#">3</a>
-        <a class="dropdown-item" href="#">4</a>
-        <a class="dropdown-item" href="#">5 (Strongly Agree)</a>
-  </div>
-
-<!--Question six-->
-<h3><strong>Question 6:</strong></h3>
-    <h4>How lomg has it been since you've been camping?</h4>
-    <a class="btn btn-outline-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Choose your Answer
-      </a>
-  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-        <a class="dropdown-item" href="#">less than 6 months</a>
-        <a class="dropdown-item" href="#">6 to 12 months</a>
-        <a class="dropdown-item" href="#">1 to 3 years</a>
-        <a class="dropdown-item" href="#">3 to 5 years</a>
-        <a class="dropdown-item" href="#">Never been camping</a>
-  </div>
-
-    <!--Question seven-->
-<h3><strong>Question 7:</strong></h3>
-    <h4>The woman should be in charge of the kitchen at home?</h4>
-    <a class="btn btn-outline-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Choose your Answer
-      </a>
-  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-        <a class="dropdown-item" href="#">1 (Strongly Disagree)</a>
-        <a class="dropdown-item" href="#">2</a>
-        <a class="dropdown-item" href="#">3</a>
-        <a class="dropdown-item" href="#">4</a>
-        <a class="dropdown-item" href="#">5 (Strongly Agree)</a>
-  </div>
-
-<!--Question eight-->
-<h3><strong>Question 8:</strong></h3>
-    <h4>The man should always pay for the first date?</h4>
-    <a class="btn btn-outline-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Choose your Answer
-      </a>
-  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-        <a class="dropdown-item" href="#">1 (Strongly Disagree)</a>
-        <a class="dropdown-item" href="#">2</a>
-        <a class="dropdown-item" href="#">3</a>
-        <a class="dropdown-item" href="#">4</a>
-        <a class="dropdown-item" href="#">5 (Strongly Agree)</a>
-  </div>
-
-<!--Question nine-->
-<h3><strong>Question 9:</strong></h3>
-<h4>It is important to vaccinate our children?</h4>
-<a class="btn btn-outline-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Choose your Answer
-  </a>
-<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-    <a class="dropdown-item" href="#">1 (Strongly Disagree)</a>
-    <a class="dropdown-item" href="#">2</a>
-    <a class="dropdown-item" href="#">3</a>
-    <a class="dropdown-item" href="#">4</a>
-    <a class="dropdown-item" href="#">5 (Strongly Agree)</a>
-</div>
-
-<!--Question 10-->
-<h3><strong>Question 10:</strong></h3>
-<h4>At the casino, the house ALWAYS wins.</h4>
-        <a class="btn btn-outline-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Choose your Answer
-    </a>
-    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-        <a class="dropdown-item" href="#">1 (Strongly Disagree)</a>
-        <a class="dropdown-item" href="#">2</a>
-        <a class="dropdown-item" href="#">3</a>
-        <a class="dropdown-item" href="#">4</a>
-        <a class="dropdown-item" href="#">5 (Strongly Agree)</a>
+      <div class="modal-body">
+          <h5 id="matchName"></h5>
+          <img id="matchImage" src="" alt="No Image" width = 250px>
+      </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
     </div>
-</br>
-    <input class="btn btn-primary mt-6" type="submit" value="Submit">
+  </div>
+</div>
+<!-- End Modal container -->
+<hr>
+<!-- ...............footer................ -->
+<div class='col s4'>
+  <p><a href='/api/friends'>API Friends List</a> | <a href='https://github.com/stefangreene/FriendFinderApp' target='_blank'>GitHub Repo</a></p>
+</div>
+
+<!-- .....End main contianer and cards.........-->   
 </div>
 </div>
-
-<footer>
-<div class="container"><p>
-<a href="#">API Friends</a> | <a href="#">GitHub Repository</a></p>
-</div></footer>
+</div>
 
 
+<!--.....Start Javascript and Jquery......-->
 <script type="text/javascript">
- 
+
+$(document).ready(function() {
+
+  $("#submitButton").on("click", function() {
+    event.preventDefault();
+
+//.........form validation...............
+    function validateForm() {
+      var isValid = true;
+        $('.mustHave').each(function() {
+          if ($(this).val() === ''){
+            isValid = false;
+            }
+          });
+            $('.question-default').each(function() {
+                if ($(this).val() === ""){
+                    isValid = false;
+                }
+            });
+            return isValid;
+        }
+
+//................................if everything is filled...............................................
+  if (validateForm() == true) {
+
+    //Make a new friend from the values submitted
+      var youFriend = {
+        name: $('#name').val().trim(),
+        photo: $('#photo').val().trim(),
+        scores: [
+                $('#q1').val(),
+                $('#q2').val(),
+                $('#q3').val(),
+                $('#q4').val(),
+                $('#q5').val(),
+                $('#q6').val(),
+                $('#q7').val(),
+                $('#q8').val(),
+                $('#q9').val(),
+                $('#q10').val(),
+              ]
+        };
+
+// AJAX post the data to the friends API.
+    $.post("/api/friends", youFriend, function(data) {
+  // Grab the result from the AJAX post so that the best match's name and photo are displayed.
+      $("#matchName").text(data.name);
+      $("#matchImage").attr("src", data.photo);
+        // Show the modal with the best match
+        $("#modal1").modal("toggle");
+    });
+
+
+        //clear form after submission
+        $('#name').val("");
+        $('#photo').val("");
+        $('#q1').val("");
+        $('#q2').val("");
+        $('#q3').val("");
+        $('#q4').val("");
+        $('#q5').val("");
+        $('#q6').val("");
+        $('#q7').val("");
+        $('#q8').val("");
+        $('#q9').val("");
+        $('#q10').val("");
+  } else {
+      alert("Please fill out ALL fields before submitting survey!")
+    }
+  });
+});
+
 </script>
 
 </body>
